@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zemas Measure Panel</title>
+  <link rel="stylesheet" href="./css/panel.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Zemas Ölçü Paneli</h1>
+
+    <div class="controls">
+      <label>Birim
+        <select id="unitSelect">
+          <option value="mm" selected>mm</option>
+          <option value="pt">pt</option>
+          <option value="px">px</option>
+        </select>
+      </label>
+      <label>Hane
+        <input id="decimalsInput" type="number" min="0" max="4" value="2" />
+      </label>
+      <label class="checkbox">
+        <input id="geoCheckbox" type="checkbox" checked /> Geometric göster
+      </label>
+      <label class="checkbox">
+        <input id="autoRefreshCheckbox" type="checkbox" /> Otomatik yenile (1sn)
+      </label>
+    </div>
+
+    <div class="actions">
+      <button id="refreshBtn">Seçimi Ölç</button>
+      <button id="writeLabelsBtn">Etiket Yaz</button>
+      <button id="clearLabelsBtn">Etiket Temizle</button>
+      <button id="copyCsvBtn">CSV Kopyala</button>
+    </div>
+
+    <div id="status" class="status">Hazır.</div>
+
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Ad</th>
+          <th>Visible</th>
+          <th>Geometric</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./js/CSInterface.js"></script>
+  <script src="./js/panel.js"></script>
+</body>
+</html>
