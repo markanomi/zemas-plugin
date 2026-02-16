@@ -11,3 +11,8 @@ Birden fazla seçili objenin ölçülerini **tek tek** çıkarmak; ölçü hesap
 - Bunun için Illustrator DOM tarafında `visibleBounds` baz alınacaktır.
 
 Detaylar için: `docs/feature-multi-measure.md`
+
+
+## Sonraki adım
+
+JSX'ten kalıcı panel/eklentiye geçiş fikirleri: `docs/convert-to-plugin.md`
